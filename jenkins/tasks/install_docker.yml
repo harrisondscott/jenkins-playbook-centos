@@ -1,0 +1,10 @@
+# Playbook for installing docker
+- name: Install docker
+  yum:
+    name: docker
+    state: latest
+- name: Start and enable docker
+  service:
+    name: docker
+    state: restarted
+    enabled: yes

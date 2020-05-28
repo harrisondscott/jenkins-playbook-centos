@@ -1,0 +1,6 @@
+---
+# tasks file for jenkins
+- name: Import Jenkins installation
+  import_tasks: install_jenkins.yml
+- name: Import docker installation
+  import_tasks: install_docker.yml
